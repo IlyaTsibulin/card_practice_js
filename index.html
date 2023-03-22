@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Card</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card-container">
+            <div class="front">
+                <div class="card-number-box">0000-0000-0000-0001</div>
+                <div class="flexbox">
+                    <div class="box">
+                        <span>Держатель карты</span>
+                        <div class="card-holder-name">full name</div>
+                    </div>
+                    <div class="box">
+                        <span>Истекает</span>
+                        <div class="expiration">
+                            <span class="exp-month">mm</span>
+                            <span class="exp-year">yy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form action="" class="card-form">
+            <div class="inputBox">
+                <span>Номер карты</span>
+                <input type="number" class="card-number-input">
+            </div>
+            <div class="inputBox">
+                <span>Держатель карты</span>
+                <input type="text" class="card-holder-input">
+            </div>
+            <div class="flexbox">
+                <div class="inputBox">
+                    <span>Месяц истечения</span>
+                    <select name="" id="" class="month-input">
+                        <option value="month" selected disabled>месяц</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+                <div class="inputBox">
+                    <span>Год истечения</span>
+                    <select name="" id="" class="year-input">
+                        <option value="year" selected disabled>год</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                    </select>
+                </div>
+            </div>
+            <input type="submit" value="submit" class="submit-btn">
+        </form>
+        <table class="table-card">
+            <thead>
+                <tr>
+                    <th>Номер карты</th>
+                    <th>Держатель карты</th>
+                    <th>Срок истечения</th>
+                </tr>
+            </thead>
+            <tbody class="table-container"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
